@@ -13,7 +13,7 @@ Initialize two variables to hold the string “LaunchCode” and the array [1, 5
 
 Construct ``for`` loops to accomplish the following tasks:
   a. Print each element of the array to a new line.
-  b. Print each character of the string - in reverse order - to a new line. */ 
+  b. Print each character of the string - in reverse order - to a new line. */
 
 
 
