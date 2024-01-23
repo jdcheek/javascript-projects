@@ -12,7 +12,7 @@ function reverseCommas() {
 	let output = [];
 	//TODO: 2. write the code required for this step
 	if (check.includes(',')) {
-	output = check.split(',').reverse().join(',')
+		output = check.split(',').reverse().join(',')
 	}
 	//NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
 	return output;
@@ -22,10 +22,10 @@ function reverseCommas() {
 function semiDash() {
 	let check = strings[1];
 	let output = [];
-//TODO: write the code required for this step
-    if (check.includes(';')) {
-        output = check.split(';').sort().join('-')
-    }
+	//TODO: write the code required for this step
+	if (check.includes(';')) {
+		output = check.split(';').sort().join('-')
+	}
 
 	return output;
 }
@@ -34,10 +34,10 @@ function semiDash() {
 function reverseSpaces() {
 	let check = strings[2];
 	let output = [];
-  //TODO: write the code required for this step
-    if (check.includes(' ')) {
-        output = check.split(' ').sort().reverse().join(' ')
-    }
+	//TODO: write the code required for this step
+	if (check.includes(' ')) {
+		output = check.split(' ').sort().reverse().join(' ')
+	}
 
 	return output;
 }
@@ -48,16 +48,16 @@ function commaSpace() {
 	let output = [];
 	//TODO: write the code required for this step
 	if (check.includes(', ')) {
-	output = check.split(', ').reverse().join(',')
+		output = check.split(', ').reverse().join(',')
 	}
 	return output;
 }
 
 // NOTE: Don't add or modify any code below this line or your program might not run as expected.
 module.exports = {
-	strings : strings, 
-	reverseCommas : reverseCommas,
-	semiDash: semiDash, 
-	reverseSpaces : reverseSpaces,
-	commaSpace : commaSpace
+	strings: strings,
+	reverseCommas: reverseCommas,
+	semiDash: semiDash,
+	reverseSpaces: reverseSpaces,
+	commaSpace: commaSpace
 };
