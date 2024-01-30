@@ -29,7 +29,18 @@ function makeSortedArr(arr) {
 }
 
 /* BONUS MISSION: Refactor your sorting function to use recursion below:
+
  */
+let sorted = []
+function recursiveSortedArr(arr) {
+  if (arr.length === 0) {
+    return sorted
+  } else {
+    sorted.push(findMinValue(arr))
+    arr.splice(arr.indexOf(findMinValue(arr)), 1)
+    recursiveSortedArr(arr)
+  }
+}
 
 //Sample arrays for testing:
 let nums1 = [5, 10, 2, 42];
@@ -39,3 +50,4 @@ let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
 console.log(makeSortedArr(nums1))
 console.log(makeSortedArr(nums2))
 console.log(makeSortedArr(nums3))
+console.log(recursiveSortedArr(nums2))

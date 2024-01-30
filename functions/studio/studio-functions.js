@@ -91,7 +91,7 @@ let longString = 'Candle'
 
 console.log(funPhrase(shortString))
 console.log(funPhrase(longString))
-console.log('Functions rock!')
+console.log(funPhrase('Functions rock!'))
 
 // Area of rectangle equal to length x width
 
