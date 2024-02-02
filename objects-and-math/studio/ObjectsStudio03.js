@@ -1,5 +1,7 @@
 // Code your crewMass function here:
+function crewMass(params) {
 
+}
 
 // Code your fuelRequired function here:
 

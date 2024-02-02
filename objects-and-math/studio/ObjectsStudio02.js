@@ -6,7 +6,7 @@ function orbitCircumference(altitude) {
 
 // Code your missionDuration function here:
 function missionDuration(numberOfOrbits, orbitRadius, orbitalSpeed) {
-  return Number((numberOfOrbits * orbitCircumference(orbitRadius) / orbitalSpeed).toFixed(2))
+  return Number((numberOfOrbits * orbitCircumference(orbitRadius || 2000) / (orbitalSpeed || 28000)).toFixed(2))
 }
 
 // Copy/paste your selectRandomEntry function here:
@@ -15,8 +15,8 @@ function selectRandomEntry(arr) {
 }
 
 // Code your oxygenExpended function here:
-function oxygenExpended(candidate) {
-  let hours = missionDuration(3, 2000, 28000)
+function oxygenExpended(candidate, numberOfOrbits) {
+  let hours = missionDuration(numberOfOrbits)
   let o2kg = candidate.o2Used(hours).toFixed(3);
   return `${candidate.name} will perform the spacewalk, which will last ${hours} hours and require ${o2kg} kg of oxygen.`
 }
@@ -67,4 +67,4 @@ let candidateF = {
 
 let crew = [candidateA, candidateC, candidateE];
 
-console.log(oxygenExpended(selectRandomEntry(crew)))
+console.log(oxygenExpended(selectRandomEntry(crew), 4))
