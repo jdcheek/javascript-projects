@@ -18,12 +18,12 @@ let launchcode = {
     }
     if (!output) {
       return ("Rutabagas! That doesn't work.");
-    } else if (output === 'Launch Rocks!') {
-      return output + '!CRASH!!!';
+    } else if (output === 'Launch Rocks') {
+      return output + '! (CRASH!!!!)';
+    } else {
+      return output + '!';
     }
-    return output + '!';
   }
-}
 };
 
 module.exports = launchcode;
