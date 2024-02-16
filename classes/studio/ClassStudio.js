@@ -6,12 +6,13 @@ class CrewCandidate {
     this.scores = scores
   }
 
-  addScores() {
-    return this.scores.reduce((prev, curr) => prev + curr, 0)
+  addScores(score) {
+    // return this.scores.reduce((prev, curr) => prev + curr, 0)
+    this.scores.push(score)
   }
 
   averageScores() {
-    return Number((this.addScores() / this.scores.length).toFixed(1))
+    return Number((this.scores.reduce((prev, curr) => prev + curr, 0) / this.scores.length).toFixed(1))
   }
 
   status() {
